@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jersey+10+Charted&display=swap');
+body {
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-color: #909090c9;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 25vh;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #44274F;
+    border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #37213F;
+}
+  
+.content {
+    padding: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logos {
+    display: flex;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.logo img {
+    width: auto;
+    height: 84px;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    filter:grayscale(100%);
+    transform:scale(1);
+    transition: all 0.75s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    transition: all 0.3s; 
+}
+
+.logo .caption {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: #ffffff;
+}
+
+.logo:hover .caption {
+    opacity: 1;
+    color:#f0f02b;
+    transition: 1.5s;
+}
+
+.links a {
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #f0f02b;
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: all 1.5s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 0.04px;
+}
+
+/* skill proficiency portion */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.proficiency {
+    display: flex;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: #cccccc7e;
+    margin-right: 5px;
+}
+
+/* Adjust color based on proficiency level */
+.square.filled {
+    background-color: #f0f02b; /* Change color for filled squares */
+}
+
+/* loading percentage style */
+
+.loading {
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 9999;
+    
+}
+
+.percentage {
+    font-size: 24px;
+    opacity: 50%;
+}
+
+/* #smileyFace {   --- if you want to include the smiley that changes based on skill level
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 48px;
+} */
+
+@media screen and (max-width: 844px) {
+    body {
+        font-family: 'Anton', sans-serif;
+        font-size: large;
+        padding: 0;
+        margin: 0;
+    }
+    
+    section {
+        min-height: 35vh; /* Adjust minimum height for smaller screens */
+        display: grid;
+        place-items: center;
+        align-content: center;
+    }
+
+    .logo img {
+        height: 48px; /* Reduce image height for smaller screens */
+    }
+
+    .caption {
+        font-size: large; /* Adjust caption font size */
+        bottom: -10px; /* Adjust position of caption */
+    }
+
+    .loading {
+        padding: 1px; /* Adjust loading padding for smaller screens */
+    }
+
+    .links {
+        font-size: large;
+    }
+}
+
+.buttontotop {
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    font-size: x-large;
+    border: none;
+    outline: none;
+    font: inherit;
+    background: transparent;
+}
+
+.buttontotop:hover {
+    color: #f0f02b;
+    text-transform: uppercase;
+    transition: all 1.5s;
+}

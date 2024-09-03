@@ -1,0 +1,2 @@
+1. find things to actually add to the image clicks
+2. Add something to "about me" div
