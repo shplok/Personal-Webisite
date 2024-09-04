@@ -1,3 +1,3 @@
 To View live website, visit 
 
-[Personal Website](https:/cs.umb.edu/~soyr)
+[Personal Website](https://www.cs.umb.edu/~soyr)
